@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="utf-8" />
@@ -7,7 +7,11 @@
 
     <link href="public/css/bootstrap.min.css" rel="stylesheet" />
 
-    <title>Hello, world!</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+
+    <title>Hello, Test!</title>
 </head>
 
 <body>
@@ -15,7 +19,7 @@
     <nav class="navbar navbar-light bg-white border-bottom border-3">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <svg id="IN_Signet_4cC_Komprimiert_" data-name="IN Signet 4cC (Komprimiert)"
+                <svg class="mr-3" id="IN_Signet_4cC_Komprimiert_" data-name="IN Signet 4cC (Komprimiert)"
                     xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
                     <rect id="Rechteck_14" data-name="Rechteck 14" width="40" height="40" fill="#fff" />
                     <path id="Pfad_1" data-name="Pfad 1"
@@ -25,41 +29,65 @@
                 System-Status
             </a>
             <div class="d-felx">
-                Zuletzt aktualisiert <span id="datetime"></span> Uhr
+                <small class="text-muted">Zuletzt aktualisiert <span id="datetime"></span> Uhr</small> 
             </div>
         </div>
     </nav>
 
     <div class="container">
-
         <div class="row m-5">
             <div class="col text-center">
                 <svg class="mb-3" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
                     <g id="Gruppe_8" data-name="Gruppe 8" transform="translate(-1265 384)">
-                      <rect id="Rechteck_18" data-name="Rechteck 18" width="100" height="100" transform="translate(1265 -384)" fill="#ffc107"/>
-                      <g id="warning-sign" transform="translate(1283.002 -367)">
-                        <path id="Pfad_6" data-name="Pfad 6" d="M60.329,50.047,36.611,6.752a5.239,5.239,0,0,0-9.222,0L3.671,50.047a5.362,5.362,0,0,0,.09,5.358A5.216,5.216,0,0,0,8.282,58H55.718a5.216,5.216,0,0,0,4.521-2.6,5.362,5.362,0,0,0,.09-5.358ZM34.857,21,33.428,41.714H30.571L29.143,21ZM32,52a3,3,0,1,1,3-3A3,3,0,0,1,32,52Z" fill="#fff"/>
-                      </g>
+                        <rect id="Rechteck_18" data-name="Rechteck 18" width="100" height="100"
+                            transform="translate(1265 -384)" fill="#ffc107" />
+                        <g id="warning-sign" transform="translate(1283.002 -367)">
+                            <path id="Pfad_6" data-name="Pfad 6"
+                                d="M60.329,50.047,36.611,6.752a5.239,5.239,0,0,0-9.222,0L3.671,50.047a5.362,5.362,0,0,0,.09,5.358A5.216,5.216,0,0,0,8.282,58H55.718a5.216,5.216,0,0,0,4.521-2.6,5.362,5.362,0,0,0,.09-5.358ZM34.857,21,33.428,41.714H30.571L29.143,21ZM32,52a3,3,0,1,1,3-3A3,3,0,0,1,32,52Z"
+                                fill="#fff" />
+                        </g>
                     </g>
-                  </svg>
-                  <h1>System eingeschränkt</h1>
+                </svg>
+                <h1>Systeme eingeschränkt</h1>
             </div>
         </div>
 
-
-
-
-
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-            </script>
-        <script>
-            var dt = new Date();
-            document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
-        </script>
+        <div class="row">
+            <div class="col bg-light pt-3 pb-3">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="d-felx">Websites</h2>
+                    </div>
+                    <div class="col">
+                        <div class="text-right d-felx">
+                            <small class="text-muted">Systeme eingeschränkt <span id="datetime"></span> Uhr</small>
+                            <svg class="" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                <g id="Gruppe_37" data-name="Gruppe 37" transform="translate(-974 132)">
+                                  <rect id="Rechteck_26" data-name="Rechteck 26" width="32" height="32" transform="translate(974 -132)" fill="#ffc107"/>
+                                  <g id="warning-sign" transform="translate(977.996 -128)">
+                                    <path id="Pfad_12" data-name="Pfad 12" d="M23.641,18.485,14.732,1.643a3.093,3.093,0,0,0-5.464,0L.359,18.485A3.079,3.079,0,0,0,3.092,23H20.908a3.079,3.079,0,0,0,2.733-4.515ZM12,20a1.5,1.5,0,1,1,1.5-1.5A1.5,1.5,0,0,1,12,20Zm1-5H11l-.5-8h3Z" fill="#fff"/>
+                                  </g>
+                                </g>
+                              </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+        <div class="row bg-warning pb-1"></div>
     </div>
 
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script>
+        var dt = new Date();
+        document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+    </script>
 
 </html>
