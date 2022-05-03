@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
-  <g id="Gruppe_8" data-name="Gruppe 8" transform="translate(-1265 384)">
-    <rect id="Rechteck_18" data-name="Rechteck 18" width="100" height="100" transform="translate(1265 -384)" fill="#ffc107"/>
-    <g id="warning-sign" transform="translate(1283.002 -367)">
-      <path id="Pfad_6" data-name="Pfad 6" d="M60.329,50.047,36.611,6.752a5.239,5.239,0,0,0-9.222,0L3.671,50.047a5.362,5.362,0,0,0,.09,5.358A5.216,5.216,0,0,0,8.282,58H55.718a5.216,5.216,0,0,0,4.521-2.6,5.362,5.362,0,0,0,.09-5.358ZM34.857,21,33.428,41.714H30.571L29.143,21ZM32,52a3,3,0,1,1,3-3A3,3,0,0,1,32,52Z" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Gruppe_15" data-name="Gruppe 15" transform="translate(-1029 174)">
+    <rect id="Rechteck_23" data-name="Rechteck 23" width="24" height="24" transform="translate(1029 -174)" fill="#ffc107"/>
+    <g id="warning-sign" transform="translate(1033.001 -169.999)">
+      <path id="Pfad_7" data-name="Pfad 7" d="M15.8,12.526,9.483.88A1.668,1.668,0,0,0,8.8.2,1.693,1.693,0,0,0,6.516.88L.2,12.526A1.678,1.678,0,0,0,1.686,15H14.314a1.7,1.7,0,0,0,.8-.2,1.673,1.673,0,0,0,.687-2.274ZM8,13a1,1,0,1,1,1-1A1,1,0,0,1,8,13ZM9,9.5a.5.5,0,0,1-.5.5h-1A.5.5,0,0,1,7,9.5v-4A.5.5,0,0,1,7.5,5h1a.5.5,0,0,1,.5.5Z" fill="#fff"/>
     </g>
   </g>
 </svg>
