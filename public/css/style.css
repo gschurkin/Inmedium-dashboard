@@ -26,7 +26,13 @@
     color: #0090D4;
     cursor: pointer;
 
-    -webkit-box-shadow:inset 0px 0px 0px 3px #eeeeee;
-    -moz-box-shadow:inset 0px 0px 0px 3px #eeeeee;
-    box-shadow:inset 0px 0px 0px 3px #eeeeee;
+    -webkit-box-shadow:inset 0px 0px 0px 5px #eeeeee;
+    -moz-box-shadow:inset 0px 0px 0px 5px #eeeeee;
+    box-shadow:inset 0px 0px 0px 5px #eeeeee;
+}
+
+.stat-item{
+    -webkit-box-shadow:inset 0px 0px 0px 1px #eeeeee;
+    -moz-box-shadow:inset 0px 0px 0px 1px #eeeeee;
+    box-shadow:inset 0px 0px 0px 1px #eeeeee;
 }

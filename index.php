@@ -1,3 +1,43 @@
+
+<?php
+$curl = curl_init();
+          
+curl_setopt_array($curl, array(
+    CURLOPT_URL => "https://api.uptimerobot.com/v2/getMonitors",
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_ENCODING => "",
+    CURLOPT_MAXREDIRS => 10,
+    CURLOPT_TIMEOUT => 30,
+    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+    CURLOPT_CUSTOMREQUEST => "POST",
+    CURLOPT_POSTFIELDS => "api_key=ur768760-9b4f4a67c85e47495c372087&format=json",
+    CURLOPT_HTTPHEADER => array(
+        "cache-control: no-cache",
+        "content-type: application/x-www-form-urlencoded"
+    ),
+));
+          
+$response = curl_exec($curl);
+$err = curl_error($curl);
+curl_close($curl); 
+
+$result = json_decode($response, true);
+
+foreach ($result['monitors'] as $monitor) 
+{
+    foreach ($monitor as $key) {
+        echo $key."\n";
+    }
+}
+          
+/* if ($err) {
+    echo "cURL Error #:" . $err;
+} else {
+    echo $result;
+} */
+
+?>
+
 <!DOCTYPE html>
 <html lang="de">
 
@@ -95,9 +135,12 @@
 
             <div class="d-none d-md-block row bg-warning pb-1"></div> <!-- if warning and bg-danger if danger -->
 
+            <?php 
+            
+            ?>
             <div class="row">
                 <!-- for schleife -->
-                <div class="col-12 col-md-6 border stat-item">
+                <div class="col-12 col-md-6 stat-item">
                     <div class="row py-3">
                         <div class="col">
                             website.com
@@ -107,7 +150,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 border stat-item">
+                <div class="col-12 col-md-6 stat-item">
                     <div class="row py-3">
                         <div class="col">
                             website2.com
