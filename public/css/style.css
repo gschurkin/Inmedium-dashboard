@@ -29,18 +29,10 @@ html {
     font-size: 20px;
 }
 
-/* .row {
-  border-collapse: collapse !important;
-} */
-
-
 /* Hover link for websites */
 .stat-item:hover{
     color: #0090D4;
     cursor: pointer;
-
-    -webkit-box-shadow:inset 0px 0px 0px 5px #eeeeee;
-    -moz-box-shadow:inset 0px 0px 0px 5px #eeeeee;
     box-shadow:inset 0px 0px 0px 5px #eeeeee;
 }
 

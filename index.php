@@ -1,35 +1,14 @@
 <?php
-$curl = curl_init();
-          
-curl_setopt_array($curl, array(
-    CURLOPT_URL => "https://api.uptimerobot.com/v2/getMonitors",
-    CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_ENCODING => "",
-    CURLOPT_MAXREDIRS => 10,
-    CURLOPT_TIMEOUT => 30,
-    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-    CURLOPT_CUSTOMREQUEST => "POST",
-    CURLOPT_POSTFIELDS => "api_key=ur768760-9b4f4a67c85e47495c372087&format=json",
-    CURLOPT_HTTPHEADER => array(
-        "cache-control: no-cache",
-        "content-type: application/x-www-form-urlencoded"
-    ),
-));
-          
-$response = curl_exec($curl);
-$err = curl_error($curl);
-curl_close($curl); 
 
-$result = json_decode($response, true);
-$counter = 1;
+require_once('src/getMonitors.php');
+require_once('src/getCounter.php');
 
-foreach ($result['monitors'] as $monitor) 
-{
-    if ($monitor["status"] == 8 || $monitor["status"] == 9) {
-        $counter = $counter + 1;
-    }
-}
+$result = getMonitors();
+$counter = getCounter($result);
+
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="de">
@@ -112,7 +91,7 @@ foreach ($result['monitors'] as $monitor)
                                 </g>
                             </g>
                         </svg>
-                        <h1>Alle Systeme ausgefallen</h1>
+                        <h1>Systeme ausgefallen</h1>
                     <?php } ?>
 
                 </div>
@@ -152,7 +131,7 @@ foreach ($result['monitors'] as $monitor)
                                         </g>
                                     </svg>
                                 <?php } else { ?>
-                                    <small class="text-muted pr-1">Alle Systeme ausgefallen</small>
+                                    <small class="text-muted pr-1">Systeme ausgefallen</small>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                                         <g id="Gruppe_11" data-name="Gruppe 11" transform="translate(-929 132)">
                                             <rect id="Rechteck_24" data-name="Rechteck 24" width="32" height="32" transform="translate(929 -132)" fill="#dc3545"/>
@@ -183,10 +162,9 @@ foreach ($result['monitors'] as $monitor)
         
             </div>
 
-
             <div class="row">
                 <?php foreach ($result['monitors'] as $monitor){ ?>
-                        <div onclick="location.href='<?php echo $monitor['url']?>';" class="col-12 col-md-6 stat-item" >
+                        <div onclick="location.href='<?php echo $monitor['url']?>';" class="col-12 col-md-6 stat-item">
                             <div class="row py-3">
                                 <div class="col">
                                     <small>
