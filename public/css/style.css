@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face {
     font-family: 'robotoregular';
     src: url('../media/fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot');
@@ -11,17 +12,29 @@
 }
 
 @font-face {
-    font-family: 'robotomedium';
-    src: url('../media/fonts/roboto_medium_macroman/Roboto-Medium-webfont.eot');
-    src: url('../media/fonts/roboto_medium_macroman/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../media/fonts/roboto_medium_macroman/Roboto-Medium-webfont.woff2') format('woff2'),
-         url('../media/fonts/roboto_medium_macroman/Roboto-Medium-webfont.woff') format('woff'),
-         url('../media/fonts/roboto_medium_macroman/Roboto-Medium-webfont.ttf') format('truetype'),
-         url('../media/fonts/roboto_medium_macroman/Roboto-Medium-webfont.svg#robotomedium') format('svg');
-    font-weight: normal;
+    font-family: 'robotoregular';
+    src: url('../media/fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot');
+    src: url('../media/fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../media/fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff2') format('woff2'),
+         url('../media/fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff') format('woff'),
+         url('../media/fonts/roboto_regular_macroman/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('../media/fonts/roboto_regular_macroman/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: bolder;
     font-style: normal;
 }
 
+
+/* rem */
+html {
+    font-size: 20px;
+}
+
+/* .row {
+  border-collapse: collapse !important;
+} */
+
+
+/* Hover link for websites */
 .stat-item:hover{
     color: #0090D4;
     cursor: pointer;
@@ -32,7 +45,48 @@
 }
 
 .stat-item{
-    -webkit-box-shadow:inset 0px 0px 0px 1px #eeeeee;
-    -moz-box-shadow:inset 0px 0px 0px 1px #eeeeee;
-    box-shadow:inset 0px 0px 0px 1px #eeeeee;
+    box-shadow: 
+    1px 0 0 0 #eeeeee, 
+    0 1px 0 0 #eeeeee, 
+    1px 1px 0 0 #eeeeee, 
+    1px 0 0 0 #eeeeee inset, 
+    0 1px 0 0 #eeeeee inset;
 }
+
+/* Waiting animation icon */
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    margin-left: 0.3rem;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    margin: 3px;
+    border: 2px solid #999999;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #999999 transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
